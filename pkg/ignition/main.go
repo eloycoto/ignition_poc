@@ -1,6 +1,7 @@
 package ignition
 
 import (
+	"encoding/json"
 	"fmt"
 
 	// "github.com/eloycoto/ignition_poc/pkg/ignition_config"
@@ -13,16 +14,28 @@ import (
 	"github.com/eloycoto/ignition_poc/pkg/ignition/source/state"
 
 	types_exp "github.com/coreos/ignition/v2/config/v3_4_experimental/types"
-
-	"github.com/coreos/ignition/v2/config"
 )
 
 func ParseConfig(rawConfig string) (*types_exp.Config, error) {
-	cfg, rpt, err := config.Parse([]byte(rawConfig))
-	if rpt.IsFatal() || err != nil {
-		return nil, err
+	var flottaConfig Config
+	err := json.Unmarshal([]byte(rawConfig), &flottaConfig)
+	if err != nil {
+		return nil, fmt.Errorf("cannot parse configuration: %v", err)
 	}
-	return &cfg, nil
+
+	res := types_exp.Config{
+		Ignition: types_exp.Ignition{
+			Version: flottaConfig.Ignition.Version,
+		},
+		Passwd: flottaConfig.Passwd,
+		Storage: types_exp.Storage{
+			Directories: flottaConfig.Storage.Directories,
+			Files:       flottaConfig.Storage.Files,
+			Links:       flottaConfig.Storage.Links,
+		},
+		Systemd: flottaConfig.Systemd,
+	}
+	return &res, nil
 }
 
 func RunConfig(cfg *types_exp.Config) error {
@@ -57,6 +70,4 @@ func RunConfig(cfg *types_exp.Config) error {
 		return fmt.Errorf("Running stage files failed: %v", err)
 	}
 	return nil
-	// fmt.Println("Phase1")
 }
-
