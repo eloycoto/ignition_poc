@@ -21,7 +21,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/coreos/ignition/v2/internal/log"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/log"
 )
 
 // tempBase() slaps together a minimal /etc/{passwd,group} for the lookup test.

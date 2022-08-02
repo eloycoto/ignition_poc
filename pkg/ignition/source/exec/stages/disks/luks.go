@@ -29,9 +29,9 @@ import (
 
 	"github.com/coreos/ignition/v2/config/util"
 	"github.com/coreos/ignition/v2/config/v3_4_experimental/types"
-	"github.com/coreos/ignition/v2/internal/distro"
-	execUtil "github.com/coreos/ignition/v2/internal/exec/util"
-	"github.com/coreos/ignition/v2/internal/resource"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/distro"
+	execUtil "github.com/eloycoto/ignition_poc/pkg/ignition/source/exec/util"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/resource"
 
 	"github.com/vincent-petithory/dataurl"
 )

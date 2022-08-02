@@ -23,7 +23,7 @@ import (
 	"syscall"
 
 	"github.com/coreos/ignition/v2/config/v3_4_experimental/types"
-	"github.com/coreos/ignition/v2/internal/distro"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/distro"
 
 	"github.com/vincent-petithory/dataurl"
 )
@@ -149,7 +149,7 @@ func (ut Util) IsUnitMasked(unit types.Unit) (bool, error) {
 }
 
 func (ut Util) EnableUnit(enabledUnit string) error {
-	return ut.appendLineToPreset(fmt.Sprintf("enable %s", enabledUnit))
+	return ut.appendLineToPreset(fmt.Sprintf("enable --now %s", enabledUnit))
 }
 
 func (ut Util) DisableUnit(disabledUnit string) error {
@@ -178,7 +178,6 @@ func (ut Util) appendLineToPreset(data string) error {
 	if err != nil {
 		return err
 	}
-
 	if err := MkdirForFile(path); err != nil {
 		return err
 	}

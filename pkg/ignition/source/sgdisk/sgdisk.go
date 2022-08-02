@@ -21,8 +21,8 @@ import (
 
 	"github.com/coreos/ignition/v2/config/util"
 	"github.com/coreos/ignition/v2/config/v3_4_experimental/types"
-	"github.com/coreos/ignition/v2/internal/distro"
-	"github.com/coreos/ignition/v2/internal/log"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/distro"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/log"
 )
 
 type Operation struct {

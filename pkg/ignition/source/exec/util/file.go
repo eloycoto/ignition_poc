@@ -29,9 +29,9 @@ import (
 
 	cutil "github.com/coreos/ignition/v2/config/util"
 	"github.com/coreos/ignition/v2/config/v3_4_experimental/types"
-	"github.com/coreos/ignition/v2/internal/log"
-	"github.com/coreos/ignition/v2/internal/resource"
-	"github.com/coreos/ignition/v2/internal/util"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/log"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/resource"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/util"
 
 	"golang.org/x/sys/unix"
 )

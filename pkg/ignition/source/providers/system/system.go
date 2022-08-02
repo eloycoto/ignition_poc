@@ -21,11 +21,11 @@ import (
 
 	latest "github.com/coreos/ignition/v2/config/v3_4_experimental"
 	"github.com/coreos/ignition/v2/config/v3_4_experimental/types"
-	"github.com/coreos/ignition/v2/internal/distro"
-	"github.com/coreos/ignition/v2/internal/log"
-	"github.com/coreos/ignition/v2/internal/providers"
-	"github.com/coreos/ignition/v2/internal/providers/util"
-	"github.com/coreos/ignition/v2/internal/resource"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/distro"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/log"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/providers"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/providers/util"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/resource"
 
 	"github.com/coreos/vcontext/report"
 )

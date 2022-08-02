@@ -7,7 +7,7 @@ require (
 	cloud.google.com/go/storage v1.9.0
 	github.com/aws/aws-sdk-go v1.30.28
 	github.com/beevik/etree v1.1.1-0.20200718192613-4a2f8b9d084c
-	github.com/coreos/go-systemd/v22 v22.0.0
+	github.com/coreos/go-systemd/v22 v22.3.2
 	github.com/coreos/ignition/v2 v2.14.0
 	github.com/coreos/vcontext v0.0.0-20211021162308-f1dbbca7bef4
 	github.com/google/renameio/v2 v2.0.0
@@ -26,7 +26,7 @@ require (
 	github.com/coreos/go-json v0.0.0-20211020211907-c63f628265de // indirect
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.0 // indirect
-	github.com/godbus/dbus/v5 v5.0.3 // indirect
+	github.com/godbus/dbus/v5 v5.0.4 // indirect
 	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e // indirect
 	github.com/golang/protobuf v1.4.2 // indirect
 	github.com/google/renameio v0.1.0 // indirect

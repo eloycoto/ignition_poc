@@ -24,8 +24,8 @@ import (
 	"github.com/coreos/ignition/v2/config/shared/errors"
 	cutil "github.com/coreos/ignition/v2/config/util"
 	"github.com/coreos/ignition/v2/config/v3_4_experimental/types"
-	"github.com/coreos/ignition/v2/internal/exec/util"
-	"github.com/coreos/ignition/v2/internal/systemd"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/exec/util"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/systemd"
 )
 
 // Preset holds the information about

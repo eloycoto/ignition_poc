@@ -33,8 +33,8 @@ import (
 	"cloud.google.com/go/compute/metadata"
 	"cloud.google.com/go/storage"
 	configErrors "github.com/coreos/ignition/v2/config/shared/errors"
-	"github.com/coreos/ignition/v2/internal/log"
-	"github.com/coreos/ignition/v2/internal/util"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/log"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/util"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/option"
 

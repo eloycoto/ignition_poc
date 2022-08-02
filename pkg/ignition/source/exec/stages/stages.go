@@ -16,10 +16,10 @@ package stages
 
 import (
 	"github.com/coreos/ignition/v2/config/v3_4_experimental/types"
-	"github.com/coreos/ignition/v2/internal/log"
-	"github.com/coreos/ignition/v2/internal/registry"
-	"github.com/coreos/ignition/v2/internal/resource"
-	"github.com/coreos/ignition/v2/internal/state"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/log"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/registry"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/resource"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/state"
 )
 
 // Stage is responsible for actually executing a stage of the configuration.

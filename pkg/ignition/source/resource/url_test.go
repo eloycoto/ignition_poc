@@ -24,8 +24,8 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/coreos/ignition/v2/config/shared/errors"
-	"github.com/coreos/ignition/v2/internal/log"
-	"github.com/coreos/ignition/v2/internal/util"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/log"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/util"
 )
 
 func TestDataUrl(t *testing.T) {

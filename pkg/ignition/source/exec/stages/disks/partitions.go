@@ -28,8 +28,8 @@ import (
 
 	cutil "github.com/coreos/ignition/v2/config/util"
 	"github.com/coreos/ignition/v2/config/v3_4_experimental/types"
-	"github.com/coreos/ignition/v2/internal/exec/util"
-	"github.com/coreos/ignition/v2/internal/sgdisk"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/exec/util"
+	"github.com/eloycoto/ignition_poc/pkg/ignition/source/sgdisk"
 )
 
 var (
