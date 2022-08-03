@@ -149,6 +149,11 @@ func (ut Util) IsUnitMasked(unit types.Unit) (bool, error) {
 }
 
 func (ut Util) EnableUnit(enabledUnit string) error {
+	args := []string{"enable", "--now", enabledUnit}
+	if output, err := exec.Command(distro.SystemctlCmd(), args...).CombinedOutput(); err != nil {
+		return fmt.Errorf("cannot enable service %s: %v: %q", enabledUnit, err, string(output))
+	}
+
 	return ut.appendLineToPreset(fmt.Sprintf("enable --now %s", enabledUnit))
 }
 
